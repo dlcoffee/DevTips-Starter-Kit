@@ -699,6 +699,15 @@ h3 {
   text-align: center;
   padding: 100px 0 30px; }
 
+@media screen and (max-width: 480px) {
+  h3 {
+    padding: 50px 0 50px; } }
+.alt-section {
+  background: #e5eaee;
+  padding-bottom: 100px; }
+  .alt-section h3 {
+    color: #d7ac5b; }
+
 h3, header nav a, header .kicker, footer .lockup .content-wrap a {
   font-size: 14px;
   font-weight: 700;
@@ -906,8 +915,20 @@ footer {
     width: 220px; }
     .skill-lockup .skill-unit {
       width: 220px; } }
-.alt-section {
-  background: #e5eaee; }
+.section-work {
+  overflow-x: hidden; }
+
+.work-belt {
+  width: 200%;
+  position: relative;
+  left: 0%;
+  -webkit-transition: all, 800ms;
+  -moz-transition: all, 800ms;
+  transition: all, 800ms; }
+
+.thumb-wrap, .work-wrap {
+  width: 50%;
+  float: left; }
 
 .thumb-container {
   max-width: 960px;
@@ -923,7 +944,6 @@ footer {
     float: left;
     position: relative;
     padding-top: 16%;
-    overflow: hidden;
     cursor: pointer;
     background-position: center center;
     background-repeat: no-repeat;
@@ -989,3 +1009,41 @@ footer {
       z-index: 2; }
       .thumb-container .thumb-unit:hover .thumb-overlay {
         opacity: 1; }
+
+.work-container {
+  max-width: 600px;
+  margin: 0px auto;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  display: none; }
+  .work-container h4 {
+    color: #c99065;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 28px;
+    line-height: 1.2;
+    margin: 0 0 20px; }
+  .work-container img {
+    max-width: 100%;
+    margin-bottom: 20px; }
+  .work-container .work-return {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    opacity: 0.5;
+    position: absolute;
+    top: -4px;
+    left: -60px; }
+    .work-container .work-return path {
+      fill: rgba(0, 0, 0, 0.4); }
+    .work-container .work-return:hover {
+      opacity: 1; }
+
+@media (max-width: 740px) {
+  .work-container .work-return {
+    left: 0; }
+  .work-container h4 {
+    margin-left: 60px; } }
