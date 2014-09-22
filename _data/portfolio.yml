@@ -31,7 +31,9 @@ logo: 'logo.svg'
 bg-img: 'beans.jpg'
 
 avatar: 'john.jpg'
-blurb: <p><strong>John</strong> is johnny john john?</p>
+blurb: >
+  **John** is johnny john john?
+  yeah ha
 
 
 # Work Section
