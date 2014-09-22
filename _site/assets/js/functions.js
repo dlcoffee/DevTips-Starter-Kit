@@ -21,6 +21,9 @@ function smoothScroll (duration) {
 
 
 function workBelt() {
+  
+  $(".trigger").remove();
+  $(".return").remove();
 
   $('.thumb-unit').click(function() {
     $('.work-belt').css('left','-100%');
@@ -34,19 +37,18 @@ function workBelt() {
 
 }
 
-function workLoad() {
-
-    $.ajaxSetup({ cache: true });
-
-    $('.thumb-unit').click(function() {
-      var $this = $(this),
+function  workLoad() {
+  
+  $.ajaxSetup({ cache: true });
+  
+  $('.thumb-unit').click(function() {
+    var $this = $(this),
         newTitle = $this.find('strong').text(),
-        newFolder = $this.data('folder'),
+        newfolder = $this.data('folder'),
         spinner = '<div class="loader">Loading...</div>',
-        newHTML = '/work/'+ newFolder +'.html';
-
-      $('.project-load').html(spinner).load(newHTML);
-      $('.project-title').text(newTitle);
-
-    });
+        newHTML = '/work/'+ newfolder +'.html';
+    $('.project-load').html(spinner).load(newHTML);
+    $('.project-title').text(newTitle);
+  });
+  
 }
